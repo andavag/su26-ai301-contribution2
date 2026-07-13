@@ -1,7 +1,7 @@
-# Contribution 2: Math decimal separator issues
+# Contribution 2: Math Decimal Separator Issue
 
 **Contribution Number:** 2
-**Student:** Andranik Avagyan 
+**Student:** Andranik Avagyan
 **Issue:** https://github.com/nvaccess/nvda/issues/20425
 **Status:** Phase I
 
@@ -9,7 +9,7 @@
 
 ## Why I Chose This Issue
 
-I chose this issue because it’s a great way to apply my Python skills to an actual open-source project. Fixing this UI bug—removing a broken dropdown option and updating the docs—is a straightforward way to improve an accessibility tool that a lot of people rely on. My main goal is to get hands-on experience navigating a large codebase, figuring out how wxPython connects to the backend logic, and going through the full pull request process from start to finish.
+I chose this issue because it is a good way to apply my Python skills to a real open-source project. Fixing this UI bug by removing a broken dropdown option is a practical way to improve an accessibility tool that many people rely on. My main goal is to get hands-on experience navigating a large codebase, understanding how wxPython connects to backend logic, and going through the full pull request process from start to finish.
 
 ---
 
@@ -17,19 +17,19 @@ I chose this issue because it’s a great way to apply my Python skills to an ac
 
 ### Problem Description
 
-The problem is the settings for reading decimal point number in desiered way, custom option is not working.
+The issue is with the setting that controls how decimal point numbers are read. The Custom option does not work as expected.
 
 ### Expected Behavior
 
-Custom option should allow to chose the option but current solution is to remove the option of chosing custom.
+The Custom option should allow the user to choose a decimal separator behavior. Since that behavior is not implemented, the current solution is to remove the Custom option.
 
 ### Current Behavior
 
-When I chose custom option I do not have a way to chose my option.
+When I choose the Custom option, there is no way to configure a custom decimal separator.
 
 ### Affected Components
 
-The settings choosing option.
+The affected component is the Math settings option for choosing how decimal separators are handled.
 
 ---
 
@@ -37,20 +37,20 @@ The settings choosing option.
 
 ### Environment Setup
 
-Instoll the right python version, install the right visual studo build tool version with the necesary depandacys.
+Install the correct Python version and the required Visual Studio Build Tools version with the necessary dependencies.
 
 ### Steps to Reproduce
 
-1. Download all the nesery depandacis for the enviernment.
-2. Run the application thru command prompt
-3. open NVDA setting/preferance section, open math subsection select custom in decimal point section.
-4. See that choosing custom does not allow for options.
+1. Download all necessary dependencies for the environment.
+2. Run the application through Command Prompt.
+3. Open the NVDA Settings/Preferences section, open the Math subsection, and select Custom in the decimal point setting.
+4. Confirm that choosing Custom does not provide any additional options.
 
 ### Reproduction Evidence
 
 - **Commit showing reproduction:** https://github.com/andavag/nvda.git
 - **Screenshots/logs:** [If applicable]
-- **My findings:** The custom option does nothing, and as directed by the author needs to be removed
+- **My findings:** The Custom option does not do anything, and as directed by the maintainer, it needs to be removed.
 
 ---
 
@@ -58,29 +58,29 @@ Instoll the right python version, install the right visual studo build tool vers
 
 ### Analysis
 
-There is no implementation to allow how to chose the custom option.
+There is no implementation that allows the user to configure the Custom option.
 
 ### Proposed Solution
 
-Remove the option for custom.
+Remove the Custom option.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** No need to have Custom option
+**Understand:** The Custom option is not needed because it is not implemented.
 
-**Match:** Check the code how the other optins like Automatic, dot, or comma work
+**Match:** Check how the other options, such as Automatic, dot, and comma, work in the code.
 
 **Plan:** [Step-by-step implementation plan]
-1. find all the places which are supposed to implement the custom option
-2. Remove the code for allowing the custom option, or comment out
+1. Find all places that expose or reference the Custom option.
+2. Remove or disable the code that allows the Custom option to appear.
 
 **Implement:** https://github.com/andavag/nvda/tree/beta
 
-**Review:** Following to the contribution.md make the changes in the asked format
+**Review:** Follow `contributing.md` and make the changes in the required format.
 
-**Evaluate:** Run the application and check that Custom option does not apper in the Math Settings.
+**Evaluate:** Run the application and confirm that the Custom option no longer appears in the Math settings.
 
 ---
 
