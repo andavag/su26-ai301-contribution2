@@ -3,7 +3,7 @@
 **Contribution Number:** 2
 **Student:** Andranik Avagyan
 **Issue:** https://github.com/nvaccess/nvda/issues/20425
-**Status:** Phase I
+**Status:** Phase II
 
 ---
 
@@ -68,7 +68,7 @@ Remove the Custom option.
 
 Using UMPIRE framework (adapted):
 
-**Understand:** The Custom option is not needed because it is not implemented.
+**Understand:** The Custom option is not needed because it is rare and unnecessary.
 
 **Match:** Check how the other options, such as Automatic, dot, and comma, work in the code.
 
