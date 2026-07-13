@@ -17,19 +17,19 @@ I chose this issue because it’s a great way to apply my Python skills to an ac
 
 ### Problem Description
 
-[In your own words, what's broken or missing?]
+The problem is the settings for reading decimal point number in desiered way, custom option is not working.
 
 ### Expected Behavior
 
-[What should happen?]
+Custom option should allow to chose the option but current solution is to remove the option of chosing custom.
 
 ### Current Behavior
 
-[What actually happens?]
+When I chose custom option I do not have a way to chose my option.
 
 ### Affected Components
 
-[Which parts of the codebase are involved?]
+The settings choosing option.
 
 ---
 
@@ -37,19 +37,20 @@ I chose this issue because it’s a great way to apply my Python skills to an ac
 
 ### Environment Setup
 
-[Notes on setting up your local development environment - challenges you faced, how you solved them]
+Instoll the right python version, install the right visual studo build tool version with the necesary depandacys.
 
 ### Steps to Reproduce
 
-1. [Step 1]
-2. [Step 2]
-3. [Observed result]
+1. Download all the nesery depandacis for the enviernment.
+2. Run the application thru command prompt
+3. open NVDA setting/preferance section, open math subsection select custom in decimal point section.
+4. See that choosing custom does not allow for options.
 
 ### Reproduction Evidence
 
-- **Commit showing reproduction:** [Link to commit in your fork]
+- **Commit showing reproduction:** https://github.com/andavag/nvda.git
 - **Screenshots/logs:** [If applicable]
-- **My findings:** [What you discovered during reproduction]
+- **My findings:** The custom option does nothing, and as directed by the author needs to be removed
 
 ---
 
@@ -57,30 +58,29 @@ I chose this issue because it’s a great way to apply my Python skills to an ac
 
 ### Analysis
 
-[Your analysis of the root cause - what's causing the issue?]
+There is no implementation to allow how to chose the custom option.
 
 ### Proposed Solution
 
-[High-level description of your fix approach]
+Remove the option for custom.
 
 ### Implementation Plan
 
 Using UMPIRE framework (adapted):
 
-**Understand:** [Restate the problem]
+**Understand:** No need to have Custom option
 
-**Match:** [What similar patterns/solutions exist in the codebase?]
+**Match:** Check the code how the other optins like Automatic, dot, or comma work
 
 **Plan:** [Step-by-step implementation plan]
-1. [Modify file X to do Y]
-2. [Add function Z]
-3. [Update tests]
+1. find all the places which are supposed to implement the custom option
+2. Remove the code for allowing the custom option, or comment out
 
-**Implement:** [Link to your branch/commits as you work]
+**Implement:** https://github.com/andavag/nvda/tree/beta
 
-**Review:** [Self-review checklist - does it follow the project's contribution guidelines?]
+**Review:** Following to the contribution.md make the changes in the asked format
 
-**Evaluate:** [How will you verify it works?]
+**Evaluate:** Run the application and check that Custom option does not apper in the Math Settings.
 
 ---
 
