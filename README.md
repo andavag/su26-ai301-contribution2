@@ -3,7 +3,7 @@
 **Contribution Number:** 2
 **Student:** Andranik Avagyan
 **Issue:** https://github.com/nvaccess/nvda/issues/20425
-**Status:** Phase II
+**Status:** Phase III
 
 ---
 
@@ -86,28 +86,17 @@ Using UMPIRE framework (adapted):
 
 ## Testing Strategy
 
-### Unit Tests
-
-- [ ] Test case 1: [Description]
-- [ ] Test case 2: [Description]
-- [ ] Test case 3: [Description]
-
-### Integration Tests
-
-- [ ] Integration scenario 1
-- [ ] Integration scenario 2
-
 ### Manual Testing
 
-[What you tested manually and results]
+Check that Custom option doesn't appear
 
 ---
 
 ## Implementation Notes
 
-### Week [X] Progress
+### Week [3] Progress
 
-[What you built this week, challenges faced, decisions made]
+Deleted the code for Custom option. The challange was to understand the necesary documentation on knowing how they want new chnges to happen.
 
 ### Week [Y] Progress
 
@@ -115,8 +104,8 @@ Using UMPIRE framework (adapted):
 
 ### Code Changes
 
-- **Files modified:** [List]
-- **Key commits:** [Links to important commits]
+- **Files modified:**  source/mathPres/MathCAT/preferences.py
+- **Key commits:** https://github.com/andavag/nvda.git
 - **Approach decisions:** [Why you chose certain approaches]
 
 ---
