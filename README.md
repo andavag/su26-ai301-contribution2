@@ -3,7 +3,7 @@
 **Contribution Number:** 2
 **Student:** Andranik Avagyan
 **Issue:** https://github.com/nvaccess/nvda/issues/20425
-**Status:** Phase III
+**Status:** Phase IV
 
 ---
 
@@ -88,7 +88,7 @@ Using UMPIRE framework (adapted):
 
 ### Manual Testing
 
-Check that Custom option doesn't appear
+Check that the Custom option doesn't appear
 
 ---
 
@@ -96,11 +96,11 @@ Check that Custom option doesn't appear
 
 ### Week [3] Progress
 
-Deleted the code for Custom option. The challange was to understand the necesary documentation on knowing how they want new chnges to happen.
+Deleted the code for the Custom option. The challenge was to understand the necessary documentation on knowing how they want new changes to happen.
 
-### Week [Y] Progress
+### Week [4] Progress
 
-[Continue documenting as you work]
+Added the documentation for the option as required, documented the changes I made, and submitted the PR. Researched the feedback I received.
 
 ### Code Changes
 
@@ -112,15 +112,15 @@ Deleted the code for Custom option. The challange was to understand the necesary
 
 ## Pull Request
 
-**PR Link:** [GitHub PR URL when submitted]
+**PR Link:** https://github.com/nvaccess/nvda/pull/20558
 
-**PR Description:** [Draft or final PR description - much of the content above can be adapted]
+**PR Description:** Remove Custom decimal separator option and add user guide documentation
 
 **Maintainer Feedback:**
-- [Date]: [Summary of feedback received]
+- [7/26/26]: The current change will break the API, so I need to make a change in the GUI.
 - [Date]: [How you addressed it]
 
-**Status:** [Awaiting review / Iterating / Approved / Merged]
+**Status:** [Iterating]
 
 ---
 
@@ -128,15 +128,15 @@ Deleted the code for Custom option. The challange was to understand the necesary
 
 ### Technical Skills Gained
 
-[What you learned technically]
+I learned how the infrastructure behind real-world applications works.
 
 ### Challenges Overcome
 
-[What was hard and how you solved it]
+Understanding and reading the documentation that is necessary to make the changes.
 
 ### What I'd Do Differently Next Time
 
-[Reflection on your process]
+Make a better established plan for making the changes.
 
 ---
 
